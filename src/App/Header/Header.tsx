@@ -1,3 +1,4 @@
+import './Header.css'
 import GithubIcon from '../../../public/icons/GithubIcon';
 import LinkedInIcon from '../../../public/icons/LinkedInIcon';
 
