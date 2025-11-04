@@ -1,0 +1,31 @@
+@import '../colors.scss';
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0px;
+  gap: 20px; 
+  list-style: none; 
+}
+
+.grid-item {
+  /*border: 1px solid #ccc; */
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #f0f0f0;
+
+  outline: 0px solid $skill-border-color;
+  transition: outline .25s ease-in-out;
+  -moz-transition: outline .25s ease-in-out;
+  -webkit-transition: outline .25s ease-in-out;
+}
+
+.grid-item:hover {
+  outline: 5px solid $skill-border-color;
+  transition: outline .25s ease-in-out;
+  -moz-transition: outline .25s ease-in-out;
+  -webkit-transition: outline .25s ease-in-out;
+}
+

@@ -9,13 +9,15 @@ function App() {
   return (
     <main>
       <Header />
-      <Name />
-      <About />
-      <Experience />
-      <Skills />
+      <div className="body">
+        <Name />
+        <About />
+        <Experience />
+        <Skills />
+      </div>
     </main>
   )
 }
 
 
-export default App
+export default  App
