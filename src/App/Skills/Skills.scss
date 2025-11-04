@@ -9,12 +9,12 @@
 }
 
 .grid-item {
-  /*border: 1px solid #ccc; */
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 15px;
+  height: 60px;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: $skill-background-color;
+  align-content: center;
 
   outline: 0px solid $skill-border-color;
   transition: outline .25s ease-in-out;
@@ -27,5 +27,11 @@
   transition: outline .25s ease-in-out;
   -moz-transition: outline .25s ease-in-out;
   -webkit-transition: outline .25s ease-in-out;
+}
+
+.skill-tooltip {
+  --rt-transition-show-delay: .25s;
+  --rt-transition-closing-delay: .25s;
+  --rt-opacity: 0.65;
 }
 
