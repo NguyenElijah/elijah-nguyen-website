@@ -1,11 +1,33 @@
+import './Skills.scss';
+import type { ReactElement } from 'react';
+import AngularIcon from '../../../public/icons/skills/AngularIcon.svg?react';
+import CSharpIcon from '../../../public/icons/skills/CSharpIcon.svg?react';
+import DotNetIcon from '../../../public/icons/skills/DotNetIcon.svg?react';
+import PythonIcon from '../../../public/icons/skills/PythonIcon.svg?react';
+import AWSIcon from '../../../public/icons/skills/AWSIcon.svg?react';
+import SnowflakeIcon from '../../../public/icons/skills/SnowflakeIcon.svg?react';
+import PostgresIcon from '../../../public/icons/skills/PostgresIcon.svg?react';
+import HasuraIcon from '../../../public/icons/skills/HasuraIcon.svg?react';
+import TypescriptIcon from '../../../public/icons/skills/TypescriptIcon.svg?react';
+import JavascriptIcon from '../../../public/icons/skills/JavascriptIcon.svg?react';
+import NewRelicIcon from '../../../public/icons/skills/NewRelicIcon.svg?react';
+import GrafanaIcon from '../../../public/icons/skills/GrafanaIcon.svg?react';
+import SQLIcon from '../../../public/icons/skills/SQLIcon.svg?react';
+import ReactIcon from '../../../public/icons/skills/ReactIcon.svg?react';
+import NodeJsIcon from '../../../public/icons/skills/NodeJsIcon.svg?react';
+import LaunchDarklyIcon from '../../../public/icons/skills/LaunchDarklyIcon.svg?react';
+import TerraformIcon from '../../../public/icons/skills/TerraformIcon.svg?react';
+import DBTIcon from '../../../public/icons/skills/DBTIcon.svg?react';
+import ConcourseIcon from '../../../public/icons/skills/ConcourseIcon.svg?react';
+import DockerIcon from '../../../public/icons/skills/DockerIcon.svg?react';
 
 function Skills() {
   return (
     <>
       <h2>Skills</h2>
-      <ul>
+      <ul className="grid-container">
         {skills.map((skill) => (
-          <li ><span>{skill.SkillName}</span></li>
+          <li className="grid-item"><a className="grid-link" href={skill.Link} target="_blank"><div>{skill.Icon}</div></a></li>
         ))}
       </ul>
     </>
@@ -15,100 +37,89 @@ function Skills() {
 export default Skills
 
 interface Skill {
-  SkillName: String,
-  Icon: String,
-  Link: String
+  Icon: ReactElement,
+  Link: string
 }
 
 export const skills: Skill[] = [
   {
-    SkillName: 'Angular',
-    Icon: '',
-    Link: ''
+    Icon: <AngularIcon />,
+    Link: 'https://angular.dev'
+  },
+    {
+    Icon: <ReactIcon />,
+    Link: 'https://react.dev/'
   },
   {
-    SkillName: '.NET',
-    Icon: '',
-    Link: ''
+    Icon: <NodeJsIcon />,
+    Link: 'https://nodejs.org/en'
   },
   {
-    SkillName: 'C#',
-    Icon: '',
-    Link: ''
+    Icon: <TypescriptIcon />,
+    Link: 'https://www.typescriptlang.org/'
   },
   {
-    SkillName: 'Python',
-    Icon: '',
-    Link: ''
+    Icon: <JavascriptIcon />,
+    Link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
   },
   {
-    SkillName: 'AWS',
-    Icon: '',
-    Link: ''
+    Icon: <DotNetIcon />,
+    Link: 'https://dotnet.microsoft.com/en-us/'
   },
   {
-    SkillName: 'Snowflake',
-    Icon: '',
-    Link: ''
+    Icon: <CSharpIcon />,
+    Link: 'https://dotnet.microsoft.com/en-us/languages/csharp'
   },
   {
-    SkillName: 'Postgres',
-    Icon: '',
-    Link: ''
+    Icon: <PythonIcon />,
+    Link: 'https://www.python.org'
   },
   {
-    SkillName: 'Hasura',
-    Icon: '',
-    Link: ''
+    Icon: <TerraformIcon />,
+    Link: 'https://developer.hashicorp.com/terraform'
   },
   {
-    SkillName: 'TypeScript',
-    Icon: '',
-    Link: ''
+    Icon: <AWSIcon />,
+    Link: 'https://aws.amazon.com/'
   },
   {
-    SkillName: 'New Relic',
-    Icon: '',
-    Link: ''
+    Icon: <SnowflakeIcon />,
+    Link: 'https://www.snowflake.com/en/'
   },
   {
-    SkillName: 'Grafana',
-    Icon: '',
-    Link: ''
+    Icon: <PostgresIcon />,
+    Link: 'https://www.postgresql.org/'
   },
   {
-    SkillName: 'SQL',
-    Icon: '',
-    Link: ''
+    Icon: <HasuraIcon />,
+    Link: 'https://hasura.io/'
   },
   {
-    SkillName: 'React',
-    Icon: '',
-    Link: ''
+    Icon: <SQLIcon />,
+    Link: 'https://www.w3schools.com/sql/'
   },
   {
-    SkillName: 'Node.JS',
-    Icon: '',
-    Link: ''
+    Icon: <DBTIcon />,
+    Link: 'https://docs.getdbt.com/'
   },
   {
-    SkillName: 'LaunchDarkly',
-    Icon: '',
-    Link: ''
+    Icon: <NewRelicIcon />,
+    Link: 'https://newrelic.com/'
   },
   {
-    SkillName: 'Terraform',
-    Icon: '',
-    Link: ''
+    Icon: <GrafanaIcon />,
+    Link: 'https://grafana.com/'
   },
   {
-    SkillName: 'DBT Cloud',
-    Icon: '',
-    Link: ''
+    Icon: <LaunchDarklyIcon />,
+    Link: 'https://launchdarkly.com/'
   },
   {
-    SkillName: 'Concourse',
-    Icon: '',
-    Link: ''
+    Icon: <ConcourseIcon />,
+    Link: 'https://concourse-ci.org/'
   },
+  {
+    Icon: <DockerIcon />,
+    Link: 'https://www.docker.com/'
+  }
 ];
