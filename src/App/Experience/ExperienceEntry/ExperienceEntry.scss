@@ -1,0 +1,33 @@
+
+
+.experience-container {
+  padding-bottom: 50px;
+
+  .experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .experience-location {
+      padding-top:10px;
+      font-size: 3vh;
+    }
+
+    .experience-title {
+      font-size: 2.5vh;
+    }
+
+    .experience-logo {
+      display: flex;
+      height: 100px;
+      margin-top: 20px;
+      margin-right: 100px;
+    }
+
+    .experience-description {
+      padding-left: 0px;
+      margin-left: 0px;
+      font-size: 1.4vh;
+    }
+  }
+}

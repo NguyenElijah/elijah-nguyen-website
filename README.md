@@ -31,9 +31,9 @@ This is a personal portfolio website displaying my work experience, skills, and 
 
 This project uses vite so by default it will be running on http://localhost:5173
 
-### This App is built with
+### This App is built with:
 
 - React
 - Vite
-- React Bootstrap
+- Bootstrap
 

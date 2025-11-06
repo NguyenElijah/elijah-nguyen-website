@@ -27,6 +27,7 @@ function Skills() {
   return (
     <>
       <h2>Skills</h2>
+      <hr></hr>
       <ul className="grid-container">
         {skills.map((skill) => (
           <li className="grid-item" data-tooltip-id="skill-tooltip" data-tooltip-content={skill.Tooltip} data-tooltip-place="top" data-tooltip-delay-hide={25}>
