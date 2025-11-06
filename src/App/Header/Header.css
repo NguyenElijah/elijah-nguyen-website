@@ -1,3 +1,8 @@
 .navbar-brand{
   --navbar-brand-padding-y: 100px;
 }
+
+.container-fluid {
+  padding-left: 15%;
+  padding-right: 15%;
+}

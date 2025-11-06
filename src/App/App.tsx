@@ -1,7 +1,6 @@
-import './App.css'
-import Name from './Name/Name'
+import './App.scss'
+import Intro from './Intro/Intro'
 import Header from './Header/Header'
-import About from './About/About'
 import Experience from './Experience/Experience'
 import Skills from './Skills/Skills'
 
@@ -10,8 +9,7 @@ function App() {
     <main>
       <Header />
       <div className="body">
-        <Name />
-        <About />
+        <Intro />
         <Experience />
         <Skills />
       </div>

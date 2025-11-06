@@ -1,0 +1,13 @@
+@import '../colors.scss';
+
+.skibidi {
+  font-size: 2vh;
+  background-color: #fff;
+
+  .nav-item {
+    .nav-link.active {
+      color: black;
+      background-color: $skill-background-color;
+    }
+  }
+}
