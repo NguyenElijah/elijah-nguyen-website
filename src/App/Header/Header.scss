@@ -1,0 +1,14 @@
+.container {
+  max-width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  .navbar-nav {
+    flex-direction: row;
+
+    .nav-link {
+      padding-right: var(--bs-navbar-nav-link-padding-x);
+      padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+  }
+}
