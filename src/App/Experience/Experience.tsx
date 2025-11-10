@@ -11,9 +11,10 @@ import UnivesityOfMinnesota from '../../assets/icons/UniversityOfMinnesotaIcon.s
 function Experience() {
   return <>
     <h2>Experience</h2>
+    <hr></hr>
     <Tabs
       defaultActiveKey="work"
-      className="md3 skibidi"
+      className="mb-3 experience-tabs"
       fill
       variant="pills"
     >
@@ -44,20 +45,21 @@ export const WorkExperience: Experience[] = [
     Duration: '2022 - Present',
     Logo: <RenaissanceLearning width="300px" />,
     Description: [
-      'Built and maintained Angular applications for students and educators hosted on AWS',
-      'Ensured web applications met L10N and A11Y standards',
-      'Managed customer PII data in Snowflake and PostgresSQL',
-      'Built pipelines in concourse for continuous development',
+      'Developed new Angular application from the ground up for educators to better monitor student progress',
+      'Built databases aggregating student practice data, assessment data and PII from multiple sources in Snowflake, Postgres and DynamoDB',
+      'Created and maintained continuous deployment pipelines with Concourse',
+      'Provided observability and alerts on application performance and costs using Grafana and New Relic'
     ]
   }
 ];
 
 export const Education: Experience[] = [
   {
-    Location: 'University of Minnesota - Twin Cities',
+    Location: 'University of Minnesota Twin Cities',
     Title: 'Bachelor\'s of Computer Engineering',
-    Duration: 'Class of 2020',
+    Duration: '2016 - 2020',
     Logo: <UnivesityOfMinnesota width="300px" />,
-    Description: []
+    Description: [
+    ]
   } 
 ]
