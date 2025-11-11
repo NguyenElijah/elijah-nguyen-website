@@ -1,9 +1,14 @@
-# WEBPAGE COMING SOON
-WIP repo for my website regarding my work experience
+# Elijah Nguyen website
+
+Website is viewable at [https://nguyenelijah.github.io/elijah-nguyen-website/](https://nguyenelijah.github.io/elijah-nguyen-website/)
+
+Custom domain name coming soon!
 
 ## Overview
 
 This is a personal portfolio website displaying my work experience, skills, and education.
+- Source code is in branch ``main``
+- Compiled artifacts are in branch ``gh-pages``
 
 ## Requirements
 
