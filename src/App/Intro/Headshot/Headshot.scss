@@ -2,25 +2,24 @@
 @use '../../breakpoints.scss';
 
 $carousel-height-desktop: 900px;
-$carousel-width-desktop: 506.25px;
+$carousel-width-desktop: 506px;
 
 $carousel-height-tablet: 600px;
-$carousel-width-tablet: 337.5px;
+$carousel-width-tablet: 337px;
 
 $carousel-height-mobile: 500px;
-$carousel-width-mobile: 281.25px;
+$carousel-width-mobile: 281px;
 
 .carousel-container {
   display: flex;
   height: $carousel-height-desktop;
   aspect-ratio: 9/16;
-  min-width: $carousel-width-desktop;
+  width: $carousel-width-desktop;
   margin-left: 100px;
   box-sizing: content-box;
   border: 5px solid colors.$carousel-border-color;
   border-radius: 10px;
   background-color: colors.$skill-background-color;
-  overflow: hidden;
   
   .carousel-item {
     border: 0px solid;
@@ -31,7 +30,6 @@ $carousel-width-mobile: 281.25px;
 
     .carousel-image-container {
       height: $carousel-height-desktop;
-      overflow: hidden;
     }
 
     .carousel-image {
@@ -44,8 +42,7 @@ $carousel-width-mobile: 281.25px;
 @media only screen and (max-width: breakpoints.$tablet-breakpoint) {
   .carousel-container {
     height: $carousel-height-tablet;
-    min-width: $carousel-width-tablet;
-    max-width: $carousel-width-tablet;
+    width: $carousel-width-tablet;
 
     .carousel-item {
       .carousel-image-container {
@@ -67,8 +64,7 @@ $carousel-width-mobile: 281.25px;
     flex-direction: column;
     align-self: center;
     height: $carousel-height-mobile;
-    min-width: $carousel-width-mobile;
-    max-width: $carousel-width-mobile;
+    width: $carousel-width-mobile;
 
         .carousel-item {
       .carousel-image-container {
