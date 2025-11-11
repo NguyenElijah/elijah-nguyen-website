@@ -1,4 +1,4 @@
-@import '../colors.scss';
+@use '../colors.scss';
 
 .experience-tabs {
   margin-top: 50px;
@@ -8,7 +8,7 @@
   .nav-item {    
     margin-right: 4px;
     margin-bottom: 4px;
-    outline: 0px solid $skill-border-color;
+    outline: 0px solid colors.$skill-border-color;
     border-radius: 5px;
     transition: outline .25s ease-in-out;
     -moz-transition: outline .25s ease-in-out;
@@ -19,11 +19,11 @@
     }
     .nav-link.active {
       color: black;
-      background-color: $skill-background-color;
+      background-color: colors.$skill-background-color;
     }
 
      &:hover {
-      outline: 5px solid $skill-border-color;
+      outline: 5px solid colors.$skill-border-color;
       transition: outline .25s ease-in-out;
       -moz-transition: outline .25s ease-in-out;
       -webkit-transition: outline .25s ease-in-out;

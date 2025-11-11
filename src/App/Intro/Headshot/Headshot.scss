@@ -1,5 +1,5 @@
-@import '../../colors.scss';
-@import '../../breakpoints.scss';
+@use '../../colors.scss';
+@use '../../breakpoints.scss';
 
 $carousel-height-desktop: 900px;
 $carousel-width-desktop: 506.25px;
@@ -17,9 +17,9 @@ $carousel-width-mobile: 281.25px;
   min-width: $carousel-width-desktop;
   margin-left: 100px;
   box-sizing: content-box;
-  border: 5px solid $carousel-border-color;
+  border: 5px solid colors.$carousel-border-color;
   border-radius: 10px;
-  background-color: $skill-background-color;
+  background-color: colors.$skill-background-color;
   overflow: hidden;
   
   .carousel-item {
@@ -41,7 +41,7 @@ $carousel-width-mobile: 281.25px;
   }
 }
 
-@media only screen and (max-width: $tablet-breakpoint) {
+@media only screen and (max-width: breakpoints.$tablet-breakpoint) {
   .carousel-container {
     height: $carousel-height-tablet;
     min-width: $carousel-width-tablet;
@@ -61,7 +61,7 @@ $carousel-width-mobile: 281.25px;
   }
 }
 
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: breakpoints.$mobile-breakpoint) {
   .carousel-container {
     margin-left: 0px;
     flex-direction: column;
