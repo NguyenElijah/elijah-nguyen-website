@@ -1,4 +1,4 @@
-@import '../colors.scss';
+@use '../colors.scss';
 
 .grid-container {
   display: grid;
@@ -14,18 +14,18 @@
   border-radius: 10px;
   height: 60px;
   text-align: center;
-  background-color: $skill-background-color;
+  background-color: colors.$skill-background-color;
   align-content: center;
   cursor: pointer;
 
-  outline: 0px solid $skill-border-color;
+  outline: 0px solid colors.$skill-border-color;
   transition: outline .25s ease-in-out;
   -moz-transition: outline .25s ease-in-out;
   -webkit-transition: outline .25s ease-in-out;
 }
 
 .grid-item:hover {
-  outline: 5px solid $skill-border-color;
+  outline: 5px solid colors.$skill-border-color;
   transition: outline .25s ease-in-out;
   -moz-transition: outline .25s ease-in-out;
   -webkit-transition: outline .25s ease-in-out;

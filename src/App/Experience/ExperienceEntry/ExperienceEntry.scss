@@ -1,4 +1,4 @@
-@import '../../breakpoints.scss';
+@use '../../breakpoints.scss';
 
 .experience-container {
   padding-bottom: 50px;
@@ -38,7 +38,7 @@
   }
 }
 
-@media only screen and (max-width: $tablet-breakpoint) {
+@media only screen and (max-width: breakpoints.$tablet-breakpoint) {
   .experience-container {
     
     .experience {
@@ -60,10 +60,14 @@
     }
   }
 }
-@media only screen and (max-width: $mobile-breakpoint) {
+@media only screen and (max-width: breakpoints.$mobile-breakpoint) {
   .experience-container {
     .experience {
       flex-direction: column;
+
+      .experience-text {
+        margin-right: 0px;
+      }
       
       .experience-logo {
         align-self: flex-end;
