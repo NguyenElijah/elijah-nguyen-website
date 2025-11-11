@@ -1,6 +1,8 @@
 import './Intro.scss';
 import Headshot from './Headshot/Headshot';
 import Button from 'react-bootstrap/Button';
+import { Tooltip } from 'react-tooltip';
+
 
 function Intro() {
   return <>
@@ -14,10 +16,12 @@ function Intro() {
             <li className="intro-fact">4 years of professional experience developing: front-end web applications, databases, web APIs, CD pipelines for enterprise applications</li>
           </ul>
         </div>
-        <Button variant="dark" href="https://www.google.com" target="_blank" size="lg" disabled>Download Resume</Button>
+        <Button className="resume-button" variant="dark" href="#" target="_blank" size="lg"
+        data-tooltip-id="resume-tooltip" data-tooltip-content="coming soon" data-tooltip-place="top" data-tooltip-delay-hide={25}>Download Resume</Button>
       </div>
       <Headshot />
     </div>
+    <Tooltip id="resume-tooltip" className="arrow"/>
   </>
 }
 

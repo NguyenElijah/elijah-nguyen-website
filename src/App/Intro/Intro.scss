@@ -1,8 +1,11 @@
+@import './../breakpoints.scss';
+
 .intro-container {
   padding-top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .intro-text {
@@ -33,3 +36,49 @@
   }
 }
 
+@media only screen and (max-width: $tablet-breakpoint) {
+
+  .intro-text {
+    .intro-description {
+
+      .intro-title {
+        font-size: 3vw;
+      }
+      .intro-fact {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .intro-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 50px;
+
+    .intro-description {
+      margin-bottom: 40px;
+
+      .intro-title {
+        font-size: 28px;
+      }
+
+      .intro-fact {
+        font-size: 18px;
+      }
+    }
+
+    .resume-button {
+      width: 300px;
+      align-self: center;
+    }
+  }
+}

@@ -11,7 +11,7 @@ function ExperienceEntry({ experience }: ExperienceEntryProps)  {
     <ul className="experience-container">
       {experience.map((exp) => (
         <div className="experience" key={exp.Title}>
-          <div>
+          <div className="experience-text">
             <div className="experience-location">{exp.Location}: {exp.Duration}</div>
             <div className="experience-title">{exp.Title}</div>
             <ul className="experience-description">
