@@ -56,9 +56,9 @@ export const WorkExperience: Experience[] = [
 export const Education: Experience[] = [
   {
     Location: 'University of Minnesota Twin Cities',
-    Title: 'Bachelor\'s of Computer Engineering',
+    Title: 'Bachelor of Computer Engineering',
     Duration: '2016 - 2020',
-    Logo: <UnivesityOfMinnesota width="300px" />,
+    Logo: <UnivesityOfMinnesota />,
     Description: [
     ]
   } 

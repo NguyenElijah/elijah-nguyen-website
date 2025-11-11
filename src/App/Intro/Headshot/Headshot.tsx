@@ -1,7 +1,8 @@
 import './Headshot.scss';
 import Carousel from 'react-bootstrap/Carousel';
 import pic1 from '../../../assets/images/headshot.jpg';
-import pic3 from '../../../assets/images/posing_with_mia.jpg';
+import pic2 from '../../../assets/images/posing_with_mia.jpg';
+import pic3 from '../../../assets/images/suit.jpg';
 
 function Headshot() {
   return <>
@@ -14,7 +15,7 @@ function Headshot() {
         </Carousel.Item>
         <Carousel.Item className="carousel-item">
           <div className="carousel-image-container">
-            <img className="carousel-image" src={pic3} />
+            <img className="carousel-image" src={pic2} />
           </div>
         </Carousel.Item >
         <Carousel.Item className="carousel-item">
