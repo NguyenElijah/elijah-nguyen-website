@@ -60,6 +60,7 @@
     }
   }
 }
+
 @media only screen and (max-width: breakpoints.$mobile-breakpoint) {
   .experience-container {
     .experience {
@@ -68,12 +69,12 @@
       .experience-text {
         margin-right: 0px;
       }
-      
+
       .experience-logo {
         align-self: flex-end;
         margin-right: 0px;
         height: 80px;
-      }
+      } 
     }
   }
 }
