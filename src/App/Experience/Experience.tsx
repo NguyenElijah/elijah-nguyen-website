@@ -35,7 +35,8 @@ interface Experience {
   Title: string,
   Duration: string,
   Logo: ReactElement,
-  Description: string[]
+  Description: string[],
+  Link: string
 }
 
 export const WorkExperience: Experience[] = [
@@ -49,7 +50,8 @@ export const WorkExperience: Experience[] = [
       'Built databases aggregating student practice data, assessment data and PII from multiple sources in Snowflake, Postgres and DynamoDB',
       'Created and maintained continuous deployment pipelines with Concourse',
       'Provided observability and alerts on application performance and costs using Grafana and New Relic'
-    ]
+    ],
+    Link: 'https://www.renaissance.com/'
   }
 ];
 
@@ -60,6 +62,7 @@ export const Education: Experience[] = [
     Duration: '2016 - 2020',
     Logo: <UnivesityOfMinnesota />,
     Description: [
-    ]
+    ],
+    Link: 'https://twin-cities.umn.edu/'
   } 
 ]
