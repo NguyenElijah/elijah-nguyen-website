@@ -20,7 +20,7 @@ function ExperienceEntry({ experience }: ExperienceEntryProps)  {
               ))}
             </ul>
           </div>
-          <div className="experience-logo">{exp.Logo}</div>
+          <a href={exp.Link} target="_blank"><div className="experience-logo">{exp.Logo}</div></a>
         </div>
       ))}
     </ul>

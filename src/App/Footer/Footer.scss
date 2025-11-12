@@ -1,0 +1,13 @@
+.footer-container {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+  .created-with-text {
+    margin-right: 5px;
+  }
+  .repo-link {
+    text-decoration: none;
+  }
+}
