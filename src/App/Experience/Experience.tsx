@@ -47,7 +47,7 @@ export const WorkExperience: Experience[] = [
     Logo: <RenaissanceLearning width="300px"/>,
     Description: [
       'Developed new Angular application from the ground up for educators to better monitor student progress',
-      'Built databases aggregating student practice data, assessment data and PII from multiple sources in Snowflake, Postgres and DynamoDB',
+      'Migrated customer reads from Snowflake to Postgres, driving down read costs by ~70%',
       'Created and maintained continuous deployment pipelines with Concourse',
       'Provided observability and alerts on application performance and costs using Grafana and New Relic'
     ],
