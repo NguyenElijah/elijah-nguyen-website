@@ -1,8 +1,4 @@
-# Elijah Nguyen website
-
-Website is viewable at [https://nguyenelijah.github.io/elijah-nguyen-website/](https://nguyenelijah.github.io/elijah-nguyen-website/)
-
-Custom domain name coming soon!
+# [elijahnguyen.dev](https://elijahnguyen.dev)
 
 ## Overview
 
