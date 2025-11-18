@@ -3,8 +3,8 @@ import Headshot from './Headshot/Headshot';
 import Button from 'react-bootstrap/Button';
 
 function Intro() {
-  function openResume(e: Event) {
-    e.preventDefault()
+  const openResume = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault()
     window.open("https://drive.google.com/file/d/15_hTzHeV8ceneHm0egFBvijDc5xX6lc_/view", "_blank");
   }
 
