@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 function Intro() {
   const openResume = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()
-    window.open("https://drive.google.com/file/d/1jEX7PDeTANLtThF7KYaQoKb-ifYtoVsg/view", "_blank");
+    window.open("https://drive.google.com/file/d/1zzkuW1oN6B_-HZcE_H0ffxzy7a9DCFuQ/view", "_blank");
   }
 
   return <>
