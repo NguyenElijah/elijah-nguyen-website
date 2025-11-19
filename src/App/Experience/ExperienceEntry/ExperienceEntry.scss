@@ -30,12 +30,22 @@
       }
     }
 
-    .experience-logo {
-      display: flex;
-      height: 100px;
-      max-width: 300px;
+    .experience-logo-container {
+      display: block;
+      max-width: 320px;
       margin-top: 20px;
-      margin-right: 100px;
+      margin-right: 80px;
+
+      .experience-logo {
+        display: flex;
+        justify-content: flex-end;
+
+        .new-tab-icon {
+          display: flex;
+          align-items: start;
+          width: 15px;
+        }
+      }
     }
   }
 
@@ -71,8 +81,8 @@
         }
       }
 
-      .experience-logo {
-        margin-right: 50px;
+      .experience-logo-container {
+          margin-right: 30px;
       }
     }
   }
@@ -87,12 +97,12 @@
         margin-right: 10px;
       }
 
-      .experience-logo {
-        align-self: flex-end;
-        margin-right: 10px;
-        height: 80px;
-        max-width: 200px;
-      } 
+      .experience-logo-container {
+          align-self: flex-end;
+          margin-top: 60px;
+          margin-right: 10px;
+          max-width: 250px;
+      }
     }
   }
 }

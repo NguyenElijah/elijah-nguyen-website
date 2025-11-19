@@ -44,10 +44,10 @@ export const WorkExperience: Experience[] = [
     Location: 'Renaissance Learning',
     Title: 'Software Engineer II',
     Duration: '2024 - Present',
-    Logo: <RenaissanceLearning width="300px"/>,
+    Logo: <RenaissanceLearning width="300px" />,
     Description: [
       'Developed new Angular application from the ground up for educators to better monitor student progress',
-      'Migrated customer reads from Snowflake to Postgres, driving down read costs by ~70%',
+      'Migrated customer reads from Snowflake to RDS Postgres, driving down read costs by >70%',
       'Created and maintained continuous deployment pipelines with Concourse',
       'Provided observability and alerts on application performance and costs using Grafana and New Relic'
     ],
@@ -57,7 +57,7 @@ export const WorkExperience: Experience[] = [
     Location: 'Renaissance Learning',
     Title: 'Software Engineer I',
     Duration: '2022 - 2024',
-    Logo: <RenaissanceLearning width="300px"/>,
+    Logo: <RenaissanceLearning width="300px" />,
     Description: [
       'Improved resiliency and error handling of existing Student Homepage',
       'Partook in mass L10N and I18N effort of existing Angular and .NET applications',
@@ -71,7 +71,7 @@ export const Education: Experience[] = [
     Location: 'University of Minnesota Twin Cities',
     Title: 'Bachelor of Computer Engineering',
     Duration: '2016 - 2020',
-    Logo: <UnivesityOfMinnesota width="176px"/>,
+    Logo: <UnivesityOfMinnesota width="176px" />,
     Description: [
     ],
     Link: 'https://twin-cities.umn.edu/'

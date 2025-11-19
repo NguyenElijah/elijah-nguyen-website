@@ -1,5 +1,6 @@
 import './ExperienceEntry.scss';
 import type Experience from "../Experience";
+import OpenInNewTabIcon from "../../../assets/icons/OpenInNewTabIcon.svg?react";
 
 interface ExperienceEntryProps {
   experience: Experience[]
@@ -19,7 +20,14 @@ function ExperienceEntry({ experience }: ExperienceEntryProps)  {
               ))}
             </ul>
           </div>
-          <a href={exp.Link} className="experience-logo" target="_blank">{exp.Logo}</a>
+          <div className="experience-logo-container">
+            <a href={exp.Link} className="experience-logo" target="_blank">
+              {exp.Logo}
+              <div className="new-tab-icon" >
+                <OpenInNewTabIcon />
+              </div>             
+            </a>
+          </div>
         </div>
       ))}
     </ul>
