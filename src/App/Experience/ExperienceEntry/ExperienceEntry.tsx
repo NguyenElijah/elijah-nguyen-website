@@ -15,8 +15,8 @@ function ExperienceEntry({ experience }: ExperienceEntryProps)  {
             <div className="experience-location">{exp.Location}: {exp.Duration}</div>
             <div className="experience-title">{exp.Title}</div>
             <ul className="experience-description">
-              {exp.Description.map((desc) => (
-                <li key={desc}>{desc}</li>
+              {exp.Description.map((desc, index) => (
+                <li key={index}>{desc}</li>
               ))}
             </ul>
           </div>
