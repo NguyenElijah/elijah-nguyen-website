@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist --cname elijahnguyen.dev"
   },
   "dependencies": {
+    "@formspree/react": "3.0.0",
     "bootstrap": "^5.3.8",
     "gh-pages": "^6.3.0",
     "react": "^19.1.0",

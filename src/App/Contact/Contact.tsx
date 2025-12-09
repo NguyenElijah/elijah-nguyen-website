@@ -1,0 +1,23 @@
+import ContactForm from "./ContactForm/ContactForm";
+import LinkedinBadge from "./LinkedinBadge/LinkedinBadge";
+import "./Contact.scss";
+
+function Contact() {
+  return <>
+    <h2>Contact</h2>
+    <hr></hr>
+    <div className="contact-options">
+      <div className="contact-option-email">
+        <h3>Send an Email</h3>
+        <ContactForm />
+      </div>
+      <div className="contact-option-linkedin">
+        <h3>Connect on Linkedin</h3>
+        <LinkedinBadge />
+      </div>
+    </div>
+
+  </>
+}
+
+export default Contact

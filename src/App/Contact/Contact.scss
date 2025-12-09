@@ -1,0 +1,30 @@
+@use '../breakpoints.scss';
+
+.contact-options {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  .contact-option-email {
+    width: 40%;
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (max-width: breakpoints.$mobile-breakpoint) {
+  
+  .contact-options {
+    flex-direction: column;
+    align-items: center;
+
+    .contact-option-email, .contact-option-linkedin {
+      min-width: 300px;
+      margin: 0;
+      width: 70%;
+    }
+  }
+}

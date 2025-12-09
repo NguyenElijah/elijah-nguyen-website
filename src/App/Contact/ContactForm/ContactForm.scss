@@ -1,0 +1,44 @@
+@use '../../colors.scss';
+
+.form-control {
+  outline: 1px solid colors.$carousel-border-color;
+  
+  transition: outline .1s ease-in-out;
+  -moz-transition: outline .1s ease-in-out;
+  -webkit-transition: outline .1s ease-in-out;
+
+}
+.form-control:focus {
+  box-shadow: none;
+  border-style: unset;
+  outline-style: unset;
+  outline: 5px solid colors.$skill-border-color;
+  
+  transition: outline .1s ease-in-out;
+  -moz-transition: outline .1s ease-in-out;
+  -webkit-transition: outline .1s ease-in-out;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.submit-button {
+  width: 100px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.submitted-toast {
+  position: relative;
+}
+
+.toast-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+}
+
