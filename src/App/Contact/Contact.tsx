@@ -3,6 +3,7 @@ import LinkedinBadge from "./LinkedinBadge/LinkedinBadge";
 import "./Contact.scss";
 
 function Contact() {
+
   return <>
     <h2>Contact</h2>
     <hr></hr>
@@ -13,7 +14,9 @@ function Contact() {
       </div>
       <div className="contact-option-linkedin">
         <h3>Connect on Linkedin</h3>
-        <LinkedinBadge />
+        <div className="linkedin-badge">
+          <LinkedinBadge />
+        </div>
       </div>
     </div>
 

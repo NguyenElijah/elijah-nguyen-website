@@ -37,4 +37,6 @@ This project uses vite so by default it will be running on http://localhost:5173
 - React
 - Vite
 - React Bootstrap
+- Lottie
+- Formspree
 

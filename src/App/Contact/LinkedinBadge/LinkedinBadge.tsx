@@ -1,27 +1,38 @@
 import { useEffect } from "react";
 
 function LinkedinBadge() {
-  var script = document.createElement('script');
-  script.setAttribute('src','https://platform.linkedin.com/badges/js/profile.js');
-  script.innerHTML = `
-    async: true
-    defer: true  
-    type: "text/javascript"
-  `;
-  document.body.appendChild(script);
+  const LinkedinStyleUrl = 'https://platform.linkedin.com/badges/js/profile.js';
 
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src = LinkedinStyleUrl;
+    script.async = true;
+    script.defer = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, [LinkedinStyleUrl]);
+
+  const iframeID = document.querySelector('iframe');
+
+const links = iframeID?.querySelectorAll("a");
+links?.forEach(link => {
+    link.setAttribute('target', '_blank');
+})
   return <>
     <div 
       className="badge-base LI-profile-badge" 
       data-locale="en_US" 
-      data-size="medium" 
+      data-size="large" 
       data-theme="light" 
-      data-type="HORIZONTAL" 
+      data-type="HORIZONTAL"
       data-vanity="elijah-nguyen-106768178" 
-      data-version="v1"
-    >
-      <a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/elijah-nguyen-106768178?trk=profile-badge">Elijah Nguyen</a>
-    </div>
+      data-version="v1">
+    </div>          
   </>
 }
 

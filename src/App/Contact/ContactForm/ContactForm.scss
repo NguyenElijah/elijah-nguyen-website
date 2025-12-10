@@ -1,19 +1,21 @@
 @use '../../colors.scss';
+@use '../../breakpoints.scss';
 
 .form-control {
   outline: 1px solid colors.$carousel-border-color;
-  
+
   transition: outline .1s ease-in-out;
   -moz-transition: outline .1s ease-in-out;
   -webkit-transition: outline .1s ease-in-out;
 
 }
+
 .form-control:focus {
   box-shadow: none;
   border-style: unset;
   outline-style: unset;
   outline: 5px solid colors.$skill-border-color;
-  
+
   transition: outline .1s ease-in-out;
   -moz-transition: outline .1s ease-in-out;
   -webkit-transition: outline .1s ease-in-out;
@@ -22,7 +24,10 @@
 .email-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 200px;
+}
+
+.form-text-area {
+  resize: none;
 }
 
 .submit-button {
@@ -31,14 +36,32 @@
   margin-bottom: 20px;
 }
 
-.submitted-toast {
+.email-toast-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  width: 100%;
+  top: 50px;
+  align-items: center;
 }
 
-.toast-button-container {
+.button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200px;
 }
 
+.email-sent-text {
+  text-align: center;
+  font-size: 22px;
+}
+
+.email-sent-animation {
+  height: 400px;
+}
+
+@media only screen and (max-width: breakpoints.$mobile-breakpoint) {
+  .email-sent-animation {
+    height: 250px;
+  }
+}
