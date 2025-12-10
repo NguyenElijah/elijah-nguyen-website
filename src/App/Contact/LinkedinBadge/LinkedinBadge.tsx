@@ -18,6 +18,21 @@ function LinkedinBadge() {
     }
   }, [LinkedinStyleUrl]);
 
+  const LinkedinBadgeUrl = 'https://badges.linkedin.com/profile?locale=en_US&badgetype=HORIZONTAL&badgetheme=light&uid=48445&version=v1&maxsize=large&trk=profile-badge&vanityname=elijah-nguyen-106768178';
+
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src = LinkedinBadgeUrl;
+    script.type = "text/html";
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, [LinkedinBadgeUrl]);
+
   return <>
     <div 
       className="badge-base LI-profile-badge" 
