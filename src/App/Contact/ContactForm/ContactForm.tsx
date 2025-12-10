@@ -11,15 +11,6 @@ import './ContactForm.scss';
 function ContactForm() {
   const [state, handleSubmit] = useForm("xzznvyrg");
 
-  const defaultOption = {
-    loop: false,
-    autoplay: true,
-    animationData: EmailSentAnimation,
-    renederSettings: {
-      preserveAspectRation: "xMidYMid slice"
-    }
-  }
-
   const UnsubmittedTemplate = <>
     <Form className="email-form" onSubmit={handleSubmit}>
       <FloatingLabel controlId="formName" label="Name" className="mb-3">
