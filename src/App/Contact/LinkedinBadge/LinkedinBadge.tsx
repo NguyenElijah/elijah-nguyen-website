@@ -9,6 +9,7 @@ function LinkedinBadge() {
     script.src = LinkedinStyleUrl;
     script.async = true;
     script.defer = true;
+    script.type = "text/javascript";
 
     document.body.appendChild(script);
 
@@ -17,12 +18,6 @@ function LinkedinBadge() {
     }
   }, [LinkedinStyleUrl]);
 
-  const iframeID = document.querySelector('iframe');
-
-const links = iframeID?.querySelectorAll("a");
-links?.forEach(link => {
-    link.setAttribute('target', '_blank');
-})
   return <>
     <div 
       className="badge-base LI-profile-badge" 
