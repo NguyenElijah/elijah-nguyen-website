@@ -29,8 +29,8 @@ function Skills() {
       <h2>Skills</h2>
       <hr></hr>
       <ul className="grid-container">
-        {skills.map((skill) => (
-          <li className="grid-item" data-tooltip-id="skill-tooltip" data-tooltip-content={skill.Tooltip} data-tooltip-place="top" data-tooltip-delay-hide={25}>
+        {skills.map((skill, index) => (
+          <li key={index} className="grid-item" data-tooltip-id="skill-tooltip" data-tooltip-content={skill.Tooltip} data-tooltip-place="top" data-tooltip-delay-hide={25}>
             <a className="grid-link" href={skill.Link} target="_blank">
               <div className="skill-icon">{skill.Icon}</div>
             </a>

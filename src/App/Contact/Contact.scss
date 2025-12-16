@@ -1,0 +1,71 @@
+@use '../breakpoints.scss';
+
+.contact-options {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .contact-option-email {
+    width: 40%;
+    margin-right: 200px;
+  }
+}
+
+  .linkedin-link {
+    display: flex;
+    flex-direction: row;;
+  }
+
+  .linkedin-icon {
+    width: 400px;
+  }
+
+  .new-tab-icon {
+    margin-left: 5px;
+    display: flex;
+    align-items: start;
+    width: 25px;
+  }
+
+
+@media only screen and (max-width: breakpoints.$tablet-breakpoint) {
+  .contact-options {
+    .contact-option-email {
+      width: 50%;
+      margin-right: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: breakpoints.$mobile-breakpoint) {
+  
+  .contact-options {
+    flex-direction: column;
+    align-items: center;
+
+    .contact-option-email, .contact-option-linkedin {
+      min-width: 300px;
+      margin: 0;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-option-email {
+      margin-bottom: 40px;
+    }
+  }
+
+  .linkedin-icon {
+    width: 280px;
+  }
+
+  .new-tab-icon {
+    width: 15px;
+  }
+}
