@@ -16,6 +16,23 @@
   }
 }
 
+  .linkedin-link {
+    display: flex;
+    flex-direction: row;;
+  }
+
+  .linkedin-icon {
+    width: 400px;
+  }
+
+  .new-tab-icon {
+    margin-left: 5px;
+    display: flex;
+    align-items: start;
+    width: 25px;
+  }
+
+
 @media only screen and (max-width: breakpoints.$tablet-breakpoint) {
   .contact-options {
     .contact-option-email {
@@ -44,7 +61,12 @@
     }
   }
 
-  .linkedin-badge {
-    align-self: center;
+  .linkedin-icon {
+    width: 300px;
+  }
+
+  .new-tab-icon {
+    min-width: 15px;
+    width: 15px;
   }
 }

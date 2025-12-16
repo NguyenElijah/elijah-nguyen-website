@@ -24,7 +24,7 @@ function ExperienceEntry({ experience }: ExperienceEntryProps)  {
             <a href={exp.Link} className="experience-logo" target="_blank">
               {exp.Logo}
               <div className="new-tab-icon" >
-                <OpenInNewTabIcon />
+                <OpenInNewTabIcon width="15px" />
               </div>             
             </a>
           </div>

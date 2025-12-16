@@ -46,7 +46,7 @@ export const WorkExperience: Experience[] = [
     Duration: '2024 - Present',
     Logo: <RenaissanceLearning width="300px" />,
     Description: [
-      <>Developed new Angular <a href="https://www.renaissance.com/renaissance-next/renaissance-next-for-teachers/" target="_blank">web application<OpenInNewTabIcon /></a> from the ground up for educators to better monitor student progress and assign practice</>,
+      <>Developed new Angular <a href="https://www.renaissance.com/renaissance-next/renaissance-next-for-teachers/" target="_blank">web application<OpenInNewTabIcon width="15px" /></a> from the ground up for educators to better monitor student progress and assign practice</>,
       <>Migrated customer reads from Snowflake to RDS Postgres, driving down read costs by &gt;70% and read latency by &gt;90%</>,
       <>Created and maintained continuous deployment pipelines with Concourse</>,
       <>Provided observability and alerts on application performance and costs using Grafana and New Relic</>

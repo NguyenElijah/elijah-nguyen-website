@@ -1,5 +1,6 @@
 import ContactForm from "./ContactForm/ContactForm";
-import LinkedinBadge from "./LinkedinBadge/LinkedinBadge";
+import LinkedinFullIcon from "../../assets/icons/LinkedinFullIcon.svg?react";
+import OpenInNewTabIcon from "../../assets/icons/OpenInNewTabIcon.svg?react";
 import "./Contact.scss";
 
 function Contact() {
@@ -13,13 +14,15 @@ function Contact() {
         <ContactForm />
       </div>
       <div className="contact-option-linkedin">
-        <h3>Connect on Linkedin</h3>
-        <div className="linkedin-badge">
-          <LinkedinBadge />
+        <h3>Connect on</h3>
+          <a href="https://www.linkedin.com/in/elijah-nguyen-106768178/" className="linkedin-link" target="_blank">
+            <LinkedinFullIcon className="linkedin-icon"/>
+            <div className="new-tab-icon" >
+              <OpenInNewTabIcon />
+            </div>             
+          </a>
         </div>
       </div>
-    </div>
-
   </>
 }
 
