@@ -1,0 +1,34 @@
+
+.typing-stats-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+
+    .category-wpm-number {
+      font-size: 72px;
+      line-height: 1;
+    }
+
+    .category-wpm-label {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.error-message {
+  font-size: 48px;
+  margin-right: 20px;
+}
+.error-icon {
+  width: 100px;
+  height: 100px;
+}

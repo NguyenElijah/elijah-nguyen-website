@@ -1,6 +1,6 @@
 import './ExperienceEntry.scss';
 import type Experience from "../Experience";
-import OpenInNewTabIcon from "../../../assets/icons/OpenInNewTabIcon.svg?react";
+import OpenInNewTabIcon from "../../../../assets/icons/OpenInNewTabIcon.svg?react";
 
 interface ExperienceEntryProps {
   experience: Experience[]

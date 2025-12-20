@@ -1,5 +1,5 @@
-@use '../../colors.scss';
-@use '../../breakpoints.scss';
+@use '../../../colors.scss';
+@use '../../../breakpoints.scss';
 
 .form-control {
   outline: 1px solid colors.$carousel-border-color;
