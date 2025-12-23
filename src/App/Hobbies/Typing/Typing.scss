@@ -1,34 +1,142 @@
+@use "../../../index.scss";
+@use "../../breakpoints.scss";
+@use "../../colors.scss";
+
+.typing-summary-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .typing-summary {
+    font-size: 22px;
+    width: 45%;
+    margin-right: 50px;
+    text-align: justify;
+  }
+}
+
+.keyboard-picture {
+  border-radius: 10px;
+  border: 5px solid colors.$carousel-border-color;
+  box-sizing: border-box;
+}
 
 .typing-stats-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-  
-  .category-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
 
-    .category-wpm-number {
-      font-size: 72px;
-      line-height: 1;
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  .typing-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .category-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+      font-size: 18px;
+
+      .category-label {
+        margin-bottom: 5px;
+      }
+
+      .category-wpm-number {
+        font-size: 72px;
+        line-height: 1;
+      }
+
+      .category-wpm-label {
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .monkeytype-container {
+    margin-top: 10px;
+    font-size: 28px;
+    text-align: center;
+
+    .monkeytype-text {
+      margin-right: 10px;
     }
 
-    .category-wpm-label {
-      font-size: 48px;
-      line-height: 48px;
-      margin-bottom: 10px;
+    .monkeytype-icon {
+      height: 28px;
+      margin-right: 5px;
+    }
+
+    .monkeytype-link {
+      text-wrap: nowrap;
+      font-family: "Lexend Deca";
+      text-decoration: none;
     }
   }
 }
 
-.error-message {
-  font-size: 48px;
-  margin-right: 20px;
+.header-linebreak {
+  margin-bottom: 40px;
 }
-.error-icon {
-  width: 100px;
-  height: 100px;
+
+.loading-spinner {
+  --bs-spinner-width: 8rem;
+  --bs-spinner-height: 8rem;
+  --bs-spinner-border-width: 0.75rem;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .error-message {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .error-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: breakpoints.$tablet-breakpoint) {
+  .typing-summary-container {
+    .typing-summary {
+      font-size: 20px;
+    }
+  }
+
+  .keyboard-picture {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: breakpoints.$mobile-breakpoint) {
+  .typing-summary-container {
+    flex-direction: column;
+    align-items: center;
+
+    .typing-summary {
+      margin: 0;
+      font-size: 18px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .keyboard-picture {
+    width: 100%;
+  }
+
+  .category-rank {
+    text-align: center;
+  }
 }

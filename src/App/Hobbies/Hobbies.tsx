@@ -6,10 +6,11 @@ function Hobbies() {
 
   return (
     <>
-      <div className="nothing-container">
+      <div className="hobbies-container">
         <Breadcrumb className="breadcrumb">
           <Breadcrumb.Item href="/">&lt;Back</Breadcrumb.Item>
         </Breadcrumb>
+         <h1 className="hobbies-header">Hobbies</h1>
         <Typing />
       </div>
     </>

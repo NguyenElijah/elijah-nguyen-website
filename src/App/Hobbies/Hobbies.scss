@@ -1,7 +1,14 @@
 
-.nothing-container {
+.hobbies-container {
   padding-top: 100px;
   margin-bottom: 500px;
+  display: flex;
+  flex-direction: column;
+
+  .hobbies-header {
+    align-self: center;
+    margin-bottom: 80px;
+  }
 }
 
 .breadcrumb {
