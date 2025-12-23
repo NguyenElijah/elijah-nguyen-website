@@ -49,8 +49,8 @@ function Typing() {
   
   const statsTemplate =
     <>
-      {data.map((stat) => (
-        <div className="category-container" key={stat.category}>
+      {data.map((stat, index) => (
+        <div className={index == 0 ? "category-container-first category-container" : "category-container"} key={stat.category}>
           <div className="category-label">{stat.category} seconds</div>
           <div className="category-wpm-number">{stat.wpm}</div>
           <div className="category-wpm-label">WPM</div>
