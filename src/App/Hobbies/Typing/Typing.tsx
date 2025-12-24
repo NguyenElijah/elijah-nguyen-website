@@ -77,8 +77,8 @@ const getTemplate = () => {
       <hr className="header-linebreak"/>
       <div className="typing-summary-container">
         <p className="typing-summary">I have an interest in mechanical keyboards and I type relatively fast. I prefer clicky switches over linear and tactile. After a decade of using
-          blue switches, I switched to Kailh White Box Owl switches. They use a click bar instead of a click jacket, so they click on both the downstroke and the upstroke!
-          My current goal is to eventually reach 200 wpm for 15 seconds.
+          blue switches, I switched to <a className="kailh-switch-link" href="https://www.kailh.net/products/kailh-white-owl-switch-set" target="_blank">Kailh White Owl Box switches<OpenInNewTabIcon width="15px" /></a>. 
+          They use a click bar instead of a click jacket, so they click on both the downstroke and the upstroke! My current goal is to eventually reach 200 wpm for 15 seconds.
         </p>
         <Figure className="keyboard-figure">
           <Figure.Image

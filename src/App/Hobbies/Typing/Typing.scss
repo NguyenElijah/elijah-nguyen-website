@@ -12,6 +12,11 @@
     width: 45%;
     margin-right: 50px;
     text-align: justify;
+
+    .kailh-switch-link {
+      text-decoration: none;
+      color: colors.$link-text-color;
+    }
   }
 }
 
@@ -80,6 +85,7 @@
       text-wrap: nowrap;
       font-family: "Lexend Deca";
       text-decoration: none;
+      color: colors.$link-text-color;
     }
   }
 }
