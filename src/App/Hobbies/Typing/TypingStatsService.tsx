@@ -40,7 +40,7 @@ export const fetchStats = async () => {
 }
 
 const isCachedResponseExpired = (cachedTypingStats: TypingStatResponse) => {
-  const expirationSeconds = 864000; //24 hours
+  const expirationSeconds = 86400; //24 hours
   const currentTimeStampSeconds = Math.floor(Date.now() / 1000);
   
   return (currentTimeStampSeconds - expirationSeconds) > cachedTypingStats.timestamp;

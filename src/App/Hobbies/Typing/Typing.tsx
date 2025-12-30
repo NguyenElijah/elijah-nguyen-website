@@ -7,7 +7,7 @@ import MonkeyTypeIcon from "../../../assets/icons/MonkeyTypeIcon.svg?react";
 import OpenInNewTabIcon from "../../../assets/icons/OpenInNewTabIcon.svg?react";
 
 // TODO: Replace this placeholder image with the actual picture of the keyboard
-import keyboardPic from "../../../assets/images/keyboard.jpg";
+import keyboardPic from "../../../assets/images/keychron_q5.jpg";
 
 import "./Typing.scss";
 
@@ -42,7 +42,7 @@ function Typing() {
   const errorTemplate = 
     <>
       <div className="error-container">
-        <div className="error-message">Error getting typing stats from MonkeyType.com</div>
+        <div className="error-message">Error getting typing stats from Monkeytype.com</div>
         <ErrorIcon className="error-icon"/>
       </div>
     </>;
@@ -87,7 +87,7 @@ const getTemplate = () => {
             src={keyboardPic}
             className="keyboard-picture"
           />
-          <Figure.Caption>Current Keyboard. Keychron Q5 with Kailh White Owl Box switches and PBT Keycaps</Figure.Caption>
+          <Figure.Caption>Current Keyboard: Keychron Q5 with Kailh White Owl Box switches and PBT Keycaps</Figure.Caption>
         </Figure>
       </div>
       <div className="typing-stats-container">
