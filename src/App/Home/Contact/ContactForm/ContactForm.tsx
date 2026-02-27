@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from '@formspree/react';
 
 import Lottie from 'lottie-react';
-import EmailSentAnimation from '../../../assets/animations/EmailSent.json';
+import EmailSentAnimation from '../../../../assets/animations/EmailSent.json';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/esm/FloatingLabel';
 import Button from 'react-bootstrap/Button';

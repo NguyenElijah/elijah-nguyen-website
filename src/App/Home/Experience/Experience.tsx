@@ -4,13 +4,13 @@ import Tabs from 'react-bootstrap/Tabs';
 import ExperienceEntry from './ExperienceEntry/ExperienceEntry';
 import type { ReactElement } from 'react';
 
-import RenaissanceLearning from '../../assets/icons/RenaissanceLearning.svg?react';
-import UnivesityOfMinnesota from '../../assets/icons/UniversityOfMinnesotaIcon.svg?react';
-import OpenInNewTabIcon from '../../assets/icons/OpenInNewTabIcon.svg?react';
+import RenaissanceLearning from '../../../assets/icons/RenaissanceLearning.svg?react';
+import UnivesityOfMinnesota from '../../../assets/icons/UniversityOfMinnesotaIcon.svg?react';
+import OpenInNewTabIcon from '../../../assets/icons/OpenInNewTabIcon.svg?react';
 
 function Experience() {
   return <>
-    <h2>Experience</h2>
+    <h2 id="experience">Experience</h2>
     <hr></hr>
     <Tabs
       defaultActiveKey="work"

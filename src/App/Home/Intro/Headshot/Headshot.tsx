@@ -1,8 +1,8 @@
 import './Headshot.scss';
 import Carousel from 'react-bootstrap/Carousel';
-import pic1 from '../../../assets/images/headshot.jpg';
-import pic2 from '../../../assets/images/posing_with_mia.jpg';
-import pic3 from '../../../assets/images/suit.jpg';
+import pic1 from '../../../../assets/images/headshot.jpg';
+import pic2 from '../../../../assets/images/posing_with_mia.jpg';
+import pic3 from '../../../../assets/images/suit.jpg';
 
 function Headshot() {
   return <>

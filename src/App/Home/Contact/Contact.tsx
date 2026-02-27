@@ -1,12 +1,12 @@
 import ContactForm from "./ContactForm/ContactForm";
-import LinkedinFullIcon from "../../assets/icons/LinkedinFullIcon.svg?react";
-import OpenInNewTabIcon from "../../assets/icons/OpenInNewTabIcon.svg?react";
+import LinkedinFullIcon from "../../../assets/icons/LinkedinFullIcon.svg?react";
+import OpenInNewTabIcon from "../../../assets/icons/OpenInNewTabIcon.svg?react";
 import "./Contact.scss";
 
 function Contact() {
 
   return <>
-    <h2>Contact</h2>
+    <h2 id="contact">Contact</h2>
     <hr></hr>
     <div className="contact-options">
       <div className="contact-option-email">

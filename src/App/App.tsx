@@ -1,23 +1,26 @@
 import './App.scss';
-import Intro from './Intro/Intro';
 import Header from './Header/Header';
-import Experience from './Experience/Experience';
-import Skills from './Skills/Skills';
-import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import Home from './Home/Home';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Hobbies from './Hobbies/Hobbies';
 
 function App() { 
 
   return (
     <main >
-      <Header />
-      <div className="body">
-        <Intro />
-        <Experience />
-        <Skills />
-        <Contact />
-        <Footer />      
-      </div>
+      <BrowserRouter>   
+        <Header />
+        <div className="body">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Hobbies/" element={<Hobbies />} />
+            <Route path="/Hobbies/*" element={<Navigate to="/Hobbies/" replace />} />
+            <Route path="*"  element={<Navigate to="/" replace />} />
+          </Routes>
+          <Footer />      
+        </div>
+      </BrowserRouter>
     </main>
   )
 }

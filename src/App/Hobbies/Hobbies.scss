@@ -1,0 +1,21 @@
+@use "../colors.scss";
+
+.hobbies-container {
+  padding-top: 100px;
+  margin-bottom: 500px;
+  display: flex;
+  flex-direction: column;
+
+  .hobbies-header {
+    align-self: center;
+    margin-bottom: 80px;
+  }
+}
+
+.breadcrumb {
+  font-size: 1.25rem;
+  
+  a {
+    color: colors.$link-text-color;
+  }
+}
